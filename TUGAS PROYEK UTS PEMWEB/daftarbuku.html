@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<title>Daftar Buku</title><head>
+	<style type="text/css">body{background:url('fixx.jpg');}</style>
+	<LINK REL="STYLESHEET" TYPE="text/css" HREF="style.css">
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#hide").click(function(){
+				$("#foto").hide();});
+			$("#show").click(function(){
+				$("#foto").show();});
+			$("#hide1").click(function(){
+				$("#foto1").hide();});
+			$("#show1").click(function(){
+				$("#foto1").show();});
+			$("#hide2").click(function(){
+				$("#foto2").hide();});
+			$("#show2").click(function(){
+				$("#foto2").show();});
+			$("#hide3").click(function(){
+				$("#foto3").hide();});
+			$("#show3").click(function(){
+				$("#foto3").show();});
+		});
+			</script>
+			<style type="text/css">
+				.foto {
+					width: 100;
+					height: 150;
+				}</style>
+	<div class="topnav">
+            <a href="index.php?page=tambah">TAMBAH KEANGGOTAAN PERPUS</a>
+            <a href="jadwal.HTML">JADWAL BUKA PERPUSTAKAAN</a>
+            <a href="daftarbuku.HTML">DAFTAR BUKU</a>
+            <a href="informasi.HTML">INFORMASI PERPUSTAKAAN</a>
+        </div></head><body>
+        	<div class="text"><h3>Daftar Buku</h3></div><br>
+        	<FORM><center><table  width="1000" border="0" cellpadding="7" cellspacing="0">
+		<tr>
+			<th width="25">No.</th>
+		<th width="200">Judul Buku</th>
+		<th width="300">Pengarang</th>
+		<th width="675">Cover Buku</th>
+	</tr>
+	<tr><td>1.
+	</td><td>Perahu Kertas</td><td>Dee</td><td><input id="hide" type="button" value ="Sembunyikan">
+		<input id="show" type="button" value="Tampilkan"><br>
+		<img src="foto.jpg" hidden id="foto"  height="300" width="200" float="auto"/>
+	</td></tr>
+<tr><td>2.
+	</td><td>Tokyo on Foot
+	</td>
+<td>Florent Chavouet</td>
+<td><input id="hide1" type="button" value="Sembunyikan">
+	<input id="show1" type="button" value="Tampilkan"><br><img src="foto1.jpg" id="foto1" hidden height="300" width="200" float="auto"/></td></tr>
+<tr><td>3.
+	</td><td>Teori Ekonomi Mikro
+	</td>
+<td>Bayu Pramutoko, SE.,MM.</td><td><input id="hide2" type="button" value="Sembunyikan">
+	<input id="show2" type="button" value="Tampilkan"><br>
+	<img src="foto3.jpg" hidden id="foto2" height="300" width="200" float="auto"/>
+</td></tr>
+<tr><td>4.
+	</td><td>Mockingjay</td><td>Suzanne Collins</td><td><input id="hide3" type="button" value ="Sembunyikan">
+		<input id="show3" type="button" value="Tampilkan"><br>
+		<img src="foto2.jpg" hidden id="foto3" height="300" width="200" float="auto"/>
+	</td></tr>
+</table></form>
+
+	
+</div></body></html>
